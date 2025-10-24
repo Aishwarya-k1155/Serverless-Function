@@ -42,47 +42,58 @@ def lambda_handler(event, context):
         "body": f"Hello, {name}! Welcome to my cloud function."
     }
 
-## How It Works
-- This AWS Lambda function is **serverless**, triggered via an HTTP Function URL.  
-- It reads an optional `name` parameter from the request URL and returns a greeting message.  
-- If no `name` is provided, it defaults to `"Guest"`.  
-- Demonstrates **event-driven architecture** and **FaaS (Function-as-a-Service)** in AWS.
 
----
+ How It Works
 
-## Testing
-1. Open the Function URL in a browser:  
+This AWS Lambda function is serverless, triggered via an HTTP Function URL.
+
+It reads an optional name parameter from the request URL and returns a greeting message.
+
+If no name is provided, it defaults to "Guest".
+
+Demonstrates event-driven architecture and FaaS (Function-as-a-Service) in AWS.
+
+🧪 Testing
+
+Open the Function URL in a browser:
+
 https://<your-function-url>/
 
-vbnet
-Copy code
-Output: `Hello, Guest! Welcome to my cloud function.`
 
-2. Test with query parameter `name`:  
+Output: Hello, Guest! Welcome to my cloud function.
+
+Test with a name parameter:
+
 https://<your-function-url>?name=Aishwarya
 
-yaml
-Copy code
-Output: `Hello, Aishwarya! Welcome to my cloud function.`
 
----
+Output: Hello, Aishwarya! Welcome to my cloud function.
 
-## Screenshots
-- **Code deployed in Lambda** → `code_deployed.png`  
-- **Function URL** → `function_url.png`  
-- **Function output** → `function_output.png`  
 
----
+Screenshots
 
-## What I Learned
-- Understood **serverless computing** and **FaaS (Function-as-a-Service)**.  
-- Learned how to deploy a cloud function on **AWS Lambda** without managing servers.  
-- Learned to use **HTTP triggers / Function URL** to execute the function on demand.  
-- Learned to accept query parameters and return **dynamic responses**.  
-- Gained hands-on experience with **event-driven architecture**, **cloud function testing**, and **free-tier deployment**.  
+Code deployed in Lambda: code_deployed.png
 
----
+Function URL configuration: function_url.png
 
-## Outcome
-- Built confidence in deploying serverless functions and testing them.  
-- Gained practical knowledge of **cloud automation** and **event-based execution**.
+Function output in browser: function_output.png
+
+
+What I Learned
+
+Understood serverless computing and FaaS (Function-as-a-Service).
+
+Learned how to deploy a cloud function on AWS Lambda without managing servers.
+
+Learned to use HTTP triggers / Function URL to execute the function on demand.
+
+Learned to accept query parameters for dynamic responses.
+
+Gained hands-on experience with event-driven architecture, cloud function testing, and free-tier deployment.
+
+
+Outcome
+
+Built confidence in deploying serverless functions and testing them.
+
+Gained practical knowledge of cloud automation and event-based execution.l knowledge of **cloud automation** and **event-based execution**.
