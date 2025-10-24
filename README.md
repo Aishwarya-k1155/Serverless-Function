@@ -15,7 +15,7 @@ The task helped me understand **event-driven computing**, **resource optimizatio
 
 ## Tools Used
 - Cloud Platform: AWS Lambda (Free Tier)  
-- Programming Language: Python 3.  
+- Programming Language: Python 3.13 
 - Testing Tool: Web browser (Function URL)
 
 ---
@@ -35,8 +35,6 @@ https://<your-function-url>/
 
 **Output:**  
 Hello, Guest! Welcome to my cloud function.
-
-yaml
 
 ---
 
